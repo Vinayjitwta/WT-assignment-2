@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title> Squares and Cubes </title>
+        </head>
+        <body>
+            <style>
+                table,td,tr
+                {
+                    border: 5px solid black;
+                    border-collapse: collapse;
+                }
+
+                body
+                {
+                    margin : 3;
+                    padding : 3;
+                }
+  
+                div
+                {
+                    position : relative;
+                    top: 50%;
+                    left : 50%;
+                    transform : translate(-50%, -50%);
+                 }
+  
+                h2
+                {
+                    font-size : 2.2em;
+                    font-family : serif;
+                    color : #6231f5;
+                    text-align : center;
+                    animation : animation 
+                    2.0s linear infinite;
+                }
+  
+                @keyframes animation
+                {
+                    0% 
+                    {
+                        opacity : 0;
+                    }
+  
+                    50%
+                    {
+                        opacity : 2.5;
+                    }
+  
+                    100%
+                    {
+                        opacity : 0;
+                    }
+                }
+            </style>
+            <table align = "center"  style = "background-color: #f5eb31">
+            <tr style = "font-family: Gill Sans">
+                <td colspan = "4">  <strong>NUMBERS FROM O TO 10 WITH THEIR SQUARES AND CUBES</strong></td>
+            </tr>
+            <tr align = "center" style = "font-family: verdana">
+                <td><strong>NUMBERS</strong> </td>
+                <td><strong>SQUARES</strong></td>
+                <td><strong>CUBES</strong></td>
+            </tr>
+                <script type = "text/javascript">
+                    for(var i= 100; i<= 1000; i+=100)
+                    {
+                        document.write("<tr align = 'center'><td>" + i + "</td><td>" + i*i
+
+                        +"</td><td>" + i*i*i + "</td></tr>")
+                    }
+
+
+                </script>
+            </table>
+            <div>
+                <h2>ASSIGNMENT-2 CHALLENGE COMPLETE</h2>
+            </div>
+        </body>
+    </html>
